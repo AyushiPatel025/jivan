@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0%;
+            padding: 0%;
+            font-family: sans-serif , 'poppins';
+            box-sizing: border-box;
+        }
+        body{
+            background: #000;
+            color: #fff;
+        }
+        .header{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Picsart_24-06-04_17-23-38-215.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 10px 8%;
+            position: relative;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+
+        }
+        .logo{
+            width: 150px;
+            cursor: pointer;
+        }
+        nav button{
+            border: 0;
+            outline: 0;
+            background: #db0001;
+            color: #fff;
+            padding: 7px 20px;
+            font-size: 12px;
+            border-radius: 4px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .language-btn{
+            display: inline-flex;
+            align-items: center;
+            background: transparent;
+            border: 7px 10;
+        }
+        .language-btn image{
+            width: 10px;
+            margin-left: 10px;    
+        }
+        .header-content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            margin-top: 100px;
+        }
+        .header-content h1{
+            font-size: 60px;
+            line-height: 70px;
+            font-weight: 600;
+            max-width: 650px;
+        }
+        .header-content h3{
+            font-weight: 400;
+            margin-bottom: 20px;   
+        }
+        .email-signup{
+            background: #ffff;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            overflow: hidden;
+        }
+        .email-signup input{
+            flex: 1;
+            border: 0;
+            outline: 0;
+            margin-left: 20px;
+        }
+        .email-signup button{
+            background: #db0001;
+            border: 0;
+            outline: 0;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 15px 30px;
+        }
+        .features{
+            padding: 50px 12%;
+            font-size: 22px;
+        }
+        .row{
+            flex-wrap: wrap;
+            display: flex;
+            width: 100%;
+            padding: 50px 0;
+            align-items: center
+          
+            
+        }
+        .text-col{
+            flex-basis: 50%;
+            margin-bottom: 20px;
+        }
+        .img-col{
+            flex-basis: 50%;
+            margin-bottom: 20px;
+        }
+        .img-col img{
+            display: block;
+            width: 90%;
+            margin: auto;
+
+        }
+        .features h2{
+            font-size: 50px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .footer{
+            padding: 50px 15% 10px;
+            border-top: 6px solid #333;
+            color: #777;
+        }
+        .footer h2{
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        .footer .col{
+            flex-basis: 25%;
+            flex-grow: 1;
+            margin-bottom: 20px;
+            color: #777;
+        }
+        .footer .col a{
+            display: block;
+            text-decoration: none;
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .footer .row{
+            align-items: flex-start;
+            padding: 10px 0;
+        }
+     
+        .copyright-text{
+            font-size: 14px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+    
+
+
+
+
+
+        *{
+            padding: 0%;
+            margin: 0%;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            
+        }
+        body{
+            font-family: 'Poppins',sans-serif;
+        }
+        nav{
+           
+            height: 80px;
+            width: 100%;
+        
+        }
+        label.logo{
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+        nav ul{
+            float: right;
+            margin-right: 20px;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+
+        
+       ;
+        }
+        
+        nav ul li a{
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: capitalize;
+
+
+            border: 0;
+            outline: 0;
+            background: #db0001;
+            color: #fff;
+            padding: 7px 20px;
+            font-size: 12px;
+            border-radius: 4px;
+            margin-left: 10px;
+            cursor: pointer;
+        
+        }
+        a.active,a:hover{
+           
+            transition: .5s;
+        }
+        .checkbtn{
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+        @media (max-width: 952px){
+            label.logo{
+                font-size: 30px;
+                padding-left: 50px;
+            }
+            nav ul li a{
+                font-size: 16px;
+            }
+        }
+        @media (max-width: 858px){
+            .checkbtn{
+                display: block;
+            }
+            ul{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background-color: #2c3e50;
+                top: 80px;
+                left: 0%;
+                text-align: center;
+                transition: all .5s;
+            }
+            nav ul li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            nav ul li a{
+                font-size: 20px;
+            }
+            a.hover,a.active{
+                background: none;
+                
+            }
+            #check:checked ~ ul{
+                left: 0%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            
+           
+                <i class="fas fa-bars"></i>
+            </label>
+           
+            <ul>
+                <li><a class="actie" href="new.html">Home</a></li>
+                <li><a href="ab.html">About</a></li>
+                <li><a href="servi.html">Services</a></li>
+                <li><a href="conte.html">Contact</a></li>
+                <li><a href="feedback.html">feedback</a></li>
+              
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Unlimited movies, TV shows and more </h1>
+            <h3>Watch anywhere. Cancel anytime</h3>
+            <p>Ready to watch? Enter your email to create or restart your membership</p>
+            <form class="email-signup">
+            <input type="email" placeholder="Email address" required>
+            <button type="submit">Get Started</button> </form>
+        </div>
+    </div>
+    <div class="features">
+        <div class="row">
+            <div class="text-col">
+                <h2>Enjoy on your TV.</h2>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray Players and more.</p>
+            </div>
+            <div class="img-col">
+                <img src="images/feature-1.png">
+            </div>
+        </div>
+        <div class="row"> <div class="img-col">
+            <img src="images/feature-1.png">
+        </div>
+            <div class="text-col">
+                <h2>Download your shows to watch offline.</h2>
+                <p>Save your favourites easily and always have something to watch</p>
+            </div>
+           
+        </div>
+        <div class="row">
+            <div class="text-col">
+                <h2>Watch everywhere.</h2>
+                <p>Stream unlimited movies and TV shows on your phone, table, laptop, and TV.</p>
+            </div>
+            <div class="img-col">
+                <img src="images/feature-1.png">
+            </div>
+        </div>
+        <div class="row"> <div class="img-col">
+            <img src="images/feature-1.png">
+        </div>
+            <div class="text-col">
+                <h2>Create profiles for childern.</h2>
+                <p>Send childern on adventures with their favourite characters in a space made just for them-free with your membership.</p>
+            </div>
+          
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Questions? call 000-000-000-000</h2>
+
+        <div class="row">
+            <div class="col">
+                <a href="FAQ">FAQ</a>
+                <a href="investor Relations">investor Relations</a>
+                <a href="Privacy">Privac</a>
+                <a href="Speed Test">Speed Test</a>
+            </div>
+            <div class="col">
+                
+                <a href="Help Center">Help Center</a>
+                <a href="Jobs">Jobs</a>
+                <a href="Cookies Preferences">Cookies Preferences</a>
+                <a href="legal Notice">legal Notice</a>
+            </div>
+            <div class="col">
+                <a href="Account">Account</a>
+                <a href="ways to watch">ways to watch</a>
+                <a href="Corporate Information">Corporate Information</a>
+                <a href="Only on netflix">Only on netflix</a>
+            </div>
+            <div class="col">
+                <a href="Media Centre">Media Centre</a>
+                <a href="Tearms of Use">Tearms of Use</a>
+                <a href="Contact Us">Contact Us</a>
+            </div>
+
+        </div>
+        
+        <p class="copyright-txt">Netflix India</p>        
+    </div>
+</body>
+</html>

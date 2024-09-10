@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0%;
+            padding: 0%;
+            font-family: sans-serif , 'poppins';
+            box-sizing: border-box;
+        }
+        body{
+            background: #000;
+            color: #fff;
+        }
+        .header{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Picsart_24-06-04_17-23-38-215.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 10px 8%;
+            position: relative;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+
+        }
+        .logo{
+            width: 150px;
+            cursor: pointer;
+        }
+        nav button{
+            border: 0;
+            outline: 0;
+            background: #db0001;
+            color: #fff;
+            padding: 7px 20px;
+            font-size: 12px;
+            border-radius: 4px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .language-btn{
+            display: inline-flex;
+            align-items: center;
+            background: transparent;
+            border: 7px 10;
+        }
+        .language-btn image{
+            width: 10px;
+            margin-left: 10px;    
+        }
+        
+        .row{
+            flex-wrap: wrap;
+            display: flex;
+            width: 100%;
+            padding: 50px 0;
+            align-items: center
+          
+            
+        }
+        .text-col{
+            flex-basis: 50%;
+            margin-bottom: 20px;
+        }
+        .img-col{
+            flex-basis: 50%;
+            margin-bottom: 20px;
+        }
+        .img-col img{
+            display: block;
+            width: 90%;
+            margin: auto;
+
+        }
+        .features h2{
+            font-size: 50px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .footer{
+            padding: 50px 15% 10px;
+            border-top: 6px solid #333;
+            color: #777;
+        }
+        .footer h2{
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        .footer .col{
+            flex-basis: 25%;
+            flex-grow: 1;
+            margin-bottom: 20px;
+            color: #777;
+        }
+        .footer .col a{
+            display: block;
+            text-decoration: none;
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .footer .row{
+            align-items: flex-start;
+            padding: 10px 0;
+        }
+     
+        .copyright-text{
+            font-size: 14px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+    
+
+
+
+
+
+        *{
+            padding: 0%;
+            margin: 0%;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            
+        }
+        body{
+            font-family: 'Poppins',sans-serif;
+        }
+        nav{
+           
+            height: 80px;
+            width: 100%;
+        
+        }
+        label.logo{
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+        nav ul{
+            float: right;
+            margin-right: 20px;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+
+        
+       ;
+        }
+        
+        nav ul li a{
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: capitalize;
+
+
+            border: 0;
+            outline: 0;
+            background: #db0001;
+            color: #fff;
+            padding: 7px 20px;
+            font-size: 12px;
+            border-radius: 4px;
+            margin-left: 10px;
+            cursor: pointer;
+        
+        }
+        a.active,a:hover{
+           
+            transition: .5s;
+        }
+        .checkbtn{
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+        @media (max-width: 952px){
+            label.logo{
+                font-size: 30px;
+                padding-left: 50px;
+            }
+            nav ul li a{
+                font-size: 16px;
+            }
+        }
+        @media (max-width: 858px){
+            .checkbtn{
+                display: block;
+            }
+            ul{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background-color: #2c3e50;
+                top: 80px;
+                left: 0%;
+                text-align: center;
+                transition: all .5s;
+            }
+            nav ul li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            nav ul li a{
+                font-size: 20px;
+            }
+            a.hover,a.active{
+                background: none;
+                
+            }
+            #check:checked ~ ul{
+                left: 0%;
+            }
+        }
+
+
+
+
+
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+html {
+  background: #2F3238;
+}
+
+.feedback-button {
+  height: 40px;
+  border: solid 3px #CCCCCC;
+  background: #333;
+  width: 100px;
+  line-height: 32px;
+  -webkit-transform: rotate(-90deg);
+  font-weight: 600;
+  color: white;
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  text-align: center;
+  font-size: 17px;
+  position: fixed;
+  right: -40px;
+  top: 45%;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  z-index: 999;
+}
+
+#feedback-main {
+  display: none;
+  float: left;
+  padding-top: 0px;
+}
+
+#feedback-div {
+  background-color: rgba(72, 72, 72, 0.4);
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  width: 450px;
+  float: left;
+  left: 50%;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+  color: #3c3c3c;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #fbfbfb;
+  padding: 13px 13px 13px 54px;
+  margin-bottom: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+
+.feedback-input:focus {
+  background: #fff;
+  box-shadow: 0;
+  border: 3px solid #3498db;
+  color: #3498db;
+  outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+
+/* Icons ---------------------------------- */
+
+#feedback-name {
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#feedback-name:focus {
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 8px 5px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#feedback-email {
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#feedback-email:focus {
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#feedback-comment {
+  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#feedback-comment {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+input:hover,
+#feedback-comment:hover,
+input:focus,
+#feedback-comment:focus {
+  background-color: white;
+}
+
+#feedback-button-blue {
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  float: left;
+  width: 100%;
+  border: #fbfbfb solid 4px;
+  cursor: pointer;
+  background-color: #e91919;
+  color: white;
+  font-size: 24px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+
+#feedback-button-blue:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #050505;
+}
+
+.feedback-button-blue:hover {
+  color: #10cedb;
+}
+
+.feedback-ease {
+  width: 0px;
+  height: 74px;
+  background-color: #fbfbfb;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.feedback-submit:hover .feedback-ease {
+  width: 100%;
+  background-color: white;
+}
+
+@media only screen and (max-width: 580px) {
+  #feedback-div {
+    left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            
+           
+                <i class="fas fa-bars"></i>
+            </label>
+           
+            <ul>
+                <li><a class="actie" href="new.html">Home</a></li>
+                <li><a href="ab.html">About</a></li>
+                <li><a href="servi.html">Services</a></li>
+                <li><a href="conte.html">Contact</a></li>
+                <li><a href="feedback.html">feedback</a></li>
+              
+            </ul>
+        </nav>
+      
+        <script>
+            function toggle_visibility() {
+       var e = document.getElementById('feedback-main');
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+
+    </script>
+
+
+        <div id="feedback-main">
+            <div id="feedback-div">
+              <form action="contact.php" method="post" class="form" id="feedback-form1" name="form1" enctype="multipart/form-data">
+          
+                <p class="name">
+                  <input name="name" type="name" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" required placeholder="Name" id="feedback-name" />
+                </p>
+          
+                <p class="email">
+                  <input name="email" type="email" class="validate[required,custom[email]] feedback-input" id="feedback-email" placeholder="Email" required />
+                </p>
+          
+                <p class="text">
+                  <textarea name="comment" type="comment" class="validate[required,length[6,300]] feedback-input" id="feedback-comment" required placeholder="Hey, type your feedback"></textarea>
+                </p>
+          
+                <div class="feedback-submit">
+                  <input type="submit" value="SEND" id="feedback-button-blue" />
+                  <div class="feedback-ease"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+          <button id="popup" class="feedback-button" onclick="toggle_visibility()">Feedback</button>
+          <script src="_include/js/feedback.js"></script>
+
+
+
+
+
+
+
+   
+    <div class="footer">
+        <h2>Questions? call 000-000-000-000</h2>
+
+        <div class="row">
+            <div class="col">
+                <a href="FAQ">FAQ</a>
+                <a href="investor Relations">investor Relations</a>
+                <a href="Privacy">Privac</a>
+                <a href="Speed Test">Speed Test</a>
+            </div>
+            <div class="col">
+                
+                <a href="Help Center">Help Center</a>
+                <a href="Jobs">Jobs</a>
+                <a href="Cookies Preferences">Cookies Preferences</a>
+                <a href="legal Notice">legal Notice</a>
+            </div>
+            <div class="col">
+                <a href="Account">Account</a>
+                <a href="ways to watch">ways to watch</a>
+                <a href="Corporate Information">Corporate Information</a>
+                <a href="Only on netflix">Only on netflix</a>
+            </div>
+            <div class="col">
+                <a href="Media Centre">Media Centre</a>
+                <a href="Tearms of Use">Tearms of Use</a>
+                <a href="Contact Us">Contact Us</a>
+            </div>
+
+        </div>
+        
+        <p class="copyright-txt">Netflix India</p>        
+    </div>
+   
+</body>
+</html>
